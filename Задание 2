@@ -1,0 +1,37 @@
+Задание 2: проектирование API
+
+Описание:
+Интернет-магазин "Петрушка Зеленая" преуспевает, расширяется и в мобильном приложении решили создать новый экран, который будет отображать магазины партнеров
+
+2. Пример REST API запроса для получения списка
+GET /api/partners
+Host: api.petruška-zelenaya.ru
+Authorization: Bearer YOUR_ACCESS_TOKEN
+Accept: application/json
+
+Пример ответа API в формате JSON 
+{
+  "partners": [
+    {
+      "id": 1,
+      "name": "Магазин 'Метро'",
+      "description": "Доставка",
+      "logo_url": "https://images.petruška-zelenaya.ru/logos/metro.png",
+      "link": "https://partner1.metro.ru"
+    },
+    {
+      "id": 2,
+      "name": "Магазин 'Ашан'",
+      "description": "Доставка",
+      "logo_url": "https://images.petruška-zelenaya.ru/logos/ashan.png",
+      "link": "https://partner2.ashan.ru"
+    },
+    {
+      "id": 3,
+      "name": "Магазин 'ВкусВилл'",
+      "description": "Доставка",
+      "logo_url": "https://images.petruška-zelenaya.ru/logos/vkusvill.png",
+      "link": "https://vkusvill.ru"
+    }
+  ]
+}
